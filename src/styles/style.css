@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.border {
+  width: 80%;
+  margin: 50px auto;
+  border: 2px solid orange;
+  text-align: center;
+}
+
+.border .topForm {
+  margin: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.border .topForm .inputForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.border .topForm .inputForm label,
+.border .topForm .inputForm input {
+  margin-top: 5px;
+  font-size: 1.25rem;
+}
+
+.border .topForm .inputForm button {
+  font-size: 1.25rem;
+  margin: 10px;
+  padding: 5px 20px;
+  background-color: orange;
+  border: none;
+  color: white;
+}
+
+.border .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.border .list table {
+  border: 2px solid #ee8700;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.border .list th {
+  border: 2px solid #f9d844;
+}
+
+.border .list td {
+  border: 2px solid #5c4c01;
+}
+/*# sourceMappingURL=style.css.map */

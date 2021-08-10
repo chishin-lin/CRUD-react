@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.border {
+  width: 80%;
+  margin: 50px auto;
+  border: 2px solid orange;
+  text-align: center;
+  .topForm {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .inputForm {
+      display: flex;
+      justify-content: center;
+      label,
+      input {
+        margin-top: 5px;
+        font-size: 1.25rem;
+      }
+      button {
+        font-size: 1.25rem;
+        margin: 10px;
+        padding: 5px 20px;
+        background-color: orange;
+        border: none;
+        color: white;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+
+    table {
+      border: 2px solid rgb(238, 135, 0);
+      margin: 20px auto;
+      width: 90%;
+    }
+    th {
+      border: 2px solid #f9d844;
+    }
+    td {
+      border: 2px solid #5c4c01;
+    }
+  }
+}

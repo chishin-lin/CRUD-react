@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./components/Form";
+import TableList from "./components/TableLists";
+import { useState } from "react";
+import "./styles/style.css";
 
-function App() {
+const App = () => {
+  const [list, setList] = useState([]);
+  const [num, setNum] = useState(1);
+  const onAdd = (data) => {
+    const newData = { num, ...data };
+    setList([...list, newData]);
+    setNum(num + 1);
+  };
+
+  //delete區
+  const deleteList = (e) => {
+    console.log(e);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="border">
+      <Form onAdd={onAdd} />
+      <TableList num={num} list={list} onDelete={deleteList} />
     </div>
   );
-}
+};
 
 export default App;
