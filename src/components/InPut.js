@@ -22,7 +22,7 @@ const InPut = ({ onAdd }) => {
   return (
     <div className="inputForm">
       <form onSubmit={onSubmit}>
-        <label for="name">姓名:</label>
+        <label htmlFor="name">姓名:</label>
 
         <input
           id="name"
@@ -31,7 +31,7 @@ const InPut = ({ onAdd }) => {
           onChange={(e) => setName(e.target.value)}
         />
         <br></br>
-        <label for="phone">電話:</label>
+        <label htmlFor="phone">電話:</label>
 
         <input
           id="phone"
@@ -40,7 +40,7 @@ const InPut = ({ onAdd }) => {
           onChange={(e) => setPhone(e.target.value)}
         />
         <br></br>
-        <label for="email">信箱:</label>
+        <label htmlFor="email">信箱:</label>
 
         <input
           id="email"

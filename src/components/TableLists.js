@@ -1,6 +1,21 @@
+import { useState } from "react";
 import Tdata from "./Tdata";
 
-const TableList = ({ onDelete, list, num }) => {
+const TableList = ({ onDelete, list, setList }) => {
+  const [number, setNumber] = useState("");
+  const dataList = list.map((obj) => (
+    <Tdata
+      key={Math.floor(Math.random() * 10000 + 1)}
+      list={obj}
+      onDelete={onDelete}
+      // editHeandler={editHeandler}
+      // edit={edit}
+      number={number}
+      setNumber={setNumber}
+      setList={setList}
+    />
+  ));
+
   return (
     <div>
       <div class="list">
@@ -15,9 +30,7 @@ const TableList = ({ onDelete, list, num }) => {
               <th>Delete</th>
             </tr>
           </thead>
-          {list.map((list) => (
-            <Tdata key={num} list={list} onDelete={onDelete} />
-          ))}
+          {dataList}
         </table>
       </div>
     </div>
